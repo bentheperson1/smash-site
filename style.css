@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #2a324e;
+    text-align: center;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;
+}
+
+a {
+    text-decoration: none;
+    color:tomato;
+}
+
+.column {
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    bottom: -20%;
+    background-color:#304772;
+    color: white;
+    text-align: center;
+}
+
+img {
+    border-radius: 3%;
+}
+
+.game-bg {
+    word-wrap: break-word;
+    margin: auto;
+    background-color: #17243b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.description {
+    width: 50%;
+    height: auto;
+    word-wrap: break-word;
+    margin: auto;
+    background-color: #17243b;
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+width: 100%;
+}
+
+.seperation {
+    padding: 1%;
+}
+
+/* Style the header */
+.header {
+    width: 50%;
+    height: auto;
+    word-wrap: break-word;
+    margin: auto;
+    background-color: #304772;
+    padding: 0 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
